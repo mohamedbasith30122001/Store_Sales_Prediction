@@ -27,47 +27,52 @@
 - Sklearn.tree import DecisionTreeRegressor (Machine Learning Algorithm)
 - Sklearn.metrics import accuracy_score (To mfind Accuracy in the model)
 - Sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score (To find regresor accuracy MAE,MSE and R2)
-    st.markdown("<h3 style='color:DeepSkyBlue;'>Problem solution:</h3>",unsafe_allow_html=True)
-    st.markdown("<h4 style='color:DeepSkyBlue;'>what i did for project solution:</h4>",unsafe_allow_html=True)
-    st.markdown("<h4 style='color:LightSkyBlue;'>Data Availability:</h4>",unsafe_allow_html=True)
-    st.markdown('#### stores_data_set.csv: ')
-    st.markdown('##### This file contains anonymized information about the 45 stores, indicating the type and size of store.')
-    st.markdown("#### sales_data_set.csv: ")
-    st.markdown("##### This is the historical training data, which covers to 2010-02-05 to 2012-11- 01, Within this file you will find the following fields : Store,Dept,Date,Weekly_Sales,IsHoliday.")
-    st.markdown('#### features_data_set.csv: ')
-    st.markdown('##### This file contains additional data related to the store, department, and regional activity for the given dates. It contains the following fields : Store,Date,Temperature,Fuel_Price,MarkDown1-5,CPI,Unemployment.') 
-    st.markdown("<h4 style='color:LightSkyBlue;'>Machine Learning Model:</h4>",unsafe_allow_html=True)
-    st.write('#####  Given CSV files to convert useful CSV files to correct data format. ')
-    st.write('#####  To Merge the  three csv files to useful csv  combine datasets')
-    st.write('#####  Then to Cleaning and Preprocessing the datasets ex:-checking datatypes, checkin NULL or not.')
-    st.write('#####  And drop unneccessary columns. then change the  Alphapetic value(object) to Numeric value using **OrdinalEncoder** for IsHoliday and Type columns.')
-    st.write('#####  To choose Dependent(Y) and Independent(X) columns and importing train_test_split module to split Training data and Testing data randomly.')
-    st.write('#####  To using SKlearn(Scikit-learn) to import DecisionTreeRegressor Machine Learning algorithm and  to using fit() func to insert Training data to implemented the algorithm.')
-    st.write('#####  To check y_pred to using predict() func to predict Testing data.')
-    st.write('#####  To check regressor custom model evaluation report: to using "MAE & MSE & Accuracy" method.')
-    st.write('#####  Then Predict the sales using models.')
-    st.write("")
-    st.markdown("<h4 style='color:LightSkyBlue;'>Streamlit Dashboard about:</h4>",unsafe_allow_html=True)
-    st.write('#####  Create a Streamlit web app and using technologies Pandas, PIL,plotly.express (px) libraries in imported  setup and running Features .')
-    st.write('##### **"Home"** : Displays an overview of the app including technologies used and a brief description of the app.and Store sales predictions. ')
-    st.write('##### **"Analysis & Prediction"** : This section allows the user to see evaluation report and prediction and visualization of data and Isights of business growth.')
-    st.write('##### - "**MAE & MSE & Accuracy"** : This section its also like as checking accuracy in regressor Mean Absolute Error, Mean Square Error, R2-R Square.')
-    st.write('##### - **"Prediction"** : This section to select the independent (or) x columns data then click the predict button to predict the sales.')
-    st.write('##### - **"Data Visualization"** : This section   to visualize information Model the effects of markdowns on holiday weeks   also using  streamlit plots.')                  
-    st.write('###### - **"Effect b/w weekly sales and markdowns"** : This section   to visualize information Model of features informations and Model the effects of markdowns on holiday weeks  also using  streamlit plots.')
-    st.write('###### - **"Display difference between all column"** : This section   to visualize information Display difference between specific column in 3D and Display difference between weekly sales and other columns  also using  streamlit plots.')
-    st.write('##### -**"Insights"** : This section to display the  business growth insights in datasets and during predictions.')
-    st.write('##### **About** : This section to dsiplays about for this Project.')
-    st.write("")
-    st.markdown("<h3 style='color:DeepSkyBlue;'>Conclusion:</h3>",unsafe_allow_html=True)
-    st.write("##### I Created the project to used to predicting the  weekly sales information to improve business idea and business perspective . ")
-    st.write("##### It mostly  helped as client knows about the business and  sales informations to easly improve business with these columns and other works.")
-    st.write("##### Weekly sales are largely dependent on department,size,store and  CPI.")
-    st.write("##### First we select the specified department,size and store , then enter cpi , temp, markdown3, type, fuel price, unemployment, holiday and other markdowns.")
-    st.write("##### These inputs have little effect on weekly_sales, but the biggest effect on weekly sales is department, size, store and cpi.")
-    st.write("##### Markdowns have little impact on weekly sales. But there are no major vulnerabilities in markdowns.")
-    st.write("##### In the data visualization, a feature importance plot shows the largest effect on weekly sales using these columns Department, Size, Store and CPI.")
-    st.write("##### In this data visualization, to model the effects of markdowns on holiday weeks. Markdown1 and markdown5 had no high holidays for holiday weeks, whereas Markdown 2,3,4 had more holidays.")
-    st.write("##### Choose specific store and department to improve size,then check cpi and unemployment it makes small difference in business.")
-    st.write("##### Temperature is differ between store and each department,so improve the cooling surrounding store and dept.")
-    st.write("##### Each Store and department, then Size and CPI,Type these informations are makes more difference in business.")
+# Problem solution:
+## what i did for project solution:
+### Data Availability:
+- stores_data_set.csv:
+- This file contains anonymized information about the 45 stores, indicating the type and size of store.
+- sales_data_set.csv:
+- This is the historical training data, which covers to 2010-02-05 to 2012-11- 01, Within this file you will find the following fields: Store,Dept,Date,Weekly_Sales,IsHoliday.")
+- features_data_set.csv:
+- This file contains additional data related to the store, department, and regional activity for the given dates. It contains the following fields : Store,Date,Temperature,Fuel_Price,MarkDown1-5,CPI,Unemployment.
+## workflow:
+## Machine Learning Model:
+#### Step 1 :
+- Given CSV files to convert useful CSV files to correct data format.
+- To Merge the  three csv files to useful csv  combine datasets.
+#### Step 2 :
+- Then to Cleaning and Preprocessing the datasets ex:-checking datatypes, checkin NULL or not.
+- And drop unneccessary columns. then change the  Alphapetic value(object) to Numeric value using **OrdinalEncoder** for IsHoliday and Type columns.
+#### Step 3 :
+- To choose Dependent(Y) and Independent(X) columns and importing train_test_split module to split Training data and Testing data randomly.
+#### Step 4 :
+- To using SKlearn(Scikit-learn) to import DecisionTreeRegressor Machine Learning algorithm and  to using fit() func to insert Training data to implemented the algorithm.
+#### Step 5 :
+- To check y_pred to using predict() func to predict Testing data.
+#### Step 6 :
+- To check regressor custom model evaluation report: to using "MAE & MSE & Accuracy" method.
+Then Predict the sales using models.
+## Streamlit Dashboard workflow:
+- Create a Streamlit web app and using technologies Pandas, PIL,plotly.express (px) libraries in imported  setup and running Features .
+- **"Home"** : Displays an overview of the app including technologies used and a brief description of the app.and Store sales predictions.
+- **"Analysis & Prediction"** : This section allows the user to see evaluation report and prediction and visualization of data and Isights of business growth.
+- -"**MAE & MSE & Accuracy"** : This section its also like as checking accuracy in regressor Mean Absolute Error, Mean Square Error, R2-R Square.
+- -**"Prediction"** : This section to select the independent (or) x columns data then click the predict button to predict the sales.
+- -**"Data Visualization"** : This section   to visualize information Model the effects of markdowns on holiday weeks   also using  streamlit plots.                 
+- -**"Effect b/w weekly sales and markdowns"** : This section   to visualize information Model of features informations and Model the effects of markdowns on holiday weeks  also using  streamlit plots.
+- -**"Display difference between all column"** : This section   to visualize information Display difference between specific column in 3D and Display difference between weekly sales and other columns  also using  streamlit plots.
+- -**"Insights"** : This section to display the  business growth insights in datasets and during predictions.
+- **About** : This section to dsiplays about for this Project.
+# Conclusion:
+- I Created the project to used to predicting the  weekly sales information to improve business idea and business perspective .
+- It mostly  helped as client knows about the business and  sales informations to easly improve business with these columns and other works.
+- Weekly sales are largely dependent on department,size,store and  CPI.
+- First we select the specified department,size and store , then enter cpi , temp, markdown3, type, fuel price, unemployment, holiday and other markdowns.
+- These inputs have little effect on weekly_sales, but the biggest effect on weekly sales is department, size, store and cpi.
+- Markdowns have little impact on weekly sales. But there are no major vulnerabilities in markdowns.
+- In the data visualization, a feature importance plot shows the largest effect on weekly sales using these columns Department, Size, Store and CPI.
+- In this data visualization, to model the effects of markdowns on holiday weeks. Markdown1 and markdown5 had no high holidays for holiday weeks, whereas Markdown 2,3,4 had more holidays.
+- Choose specific store and department to improve size,then check cpi and unemployment it makes small difference in business.
+- Temperature is differ between store and each department,so improve the cooling surrounding store and dept.
+- Each Store and department, then Size and CPI,Type these informations are makes more difference in business.
