@@ -6,7 +6,7 @@
 - predict the  Weekly sales  information using ,depending values store,dept,markdowns,temperature,fuel,cpi,unemployment and etc..To get  weekly sales value.
 - then displayed a  Streamlit  for future reference and prediction.
 # Domain:
-- Business Industry, sales and loss
+- Business Industry, sales growth and sales loss
 # Problem statement:
 - This project aims to predict  store sales information using Machine Learnng algorithms, perform data cleaning and preparation, develop Machine Learning models, and create streamlit application to gain insights into sales prediction for following years.
 - Predict the department-wide sales for each store for the following year.
