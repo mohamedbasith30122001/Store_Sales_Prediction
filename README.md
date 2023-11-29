@@ -1,4 +1,4 @@
-# Store_Sales_Prediction
+# Store_Sales_Prediction 💰✨💲
 ## Store sales prediction using Machine Learning  algorithms and predict the sales and found insights to improve business.
 # Introduction:
 - Store Sales Prediction: Extracting useful data in CSV file to predict the weekly sales.
